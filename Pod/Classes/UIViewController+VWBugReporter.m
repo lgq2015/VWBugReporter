@@ -7,9 +7,7 @@
 //
 
 #import "UIViewController+VWBugReporter.h"
-#import <objc/runtime.h>
-#import "JMC.h"
-
+#import <JiraConnect/JMC.h>
 
 @implementation UIViewController (VWBugReporter)
 
@@ -20,6 +18,7 @@
 }
 
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+    [super motionEnded:motion withEvent:event];
     if (motion == UIEventSubtypeMotionShake) {
         [self presentViewController:[[JMC sharedInstance] viewController] animated:YES completion:nil];
     }

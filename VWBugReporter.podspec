@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
                    * depends on Jira (Cloud or Server) with JIRAConnect enabled
                    DESC
 
-  s.homepage     = "http://EXAMPLE/VWBugReporter"
+  s.homepage     = "https://github.com/vinzenzweber/VWBugReporter"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 

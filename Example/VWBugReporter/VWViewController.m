@@ -26,4 +26,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)touchCrashTest:(id)sender {
+    CFRelease(nil);
+}
+
 @end

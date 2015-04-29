@@ -15,10 +15,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-
-    JMCOptions *options = [JMCOptions optionsWithUrl:@"http://jira.blockhausmedien.at:8080/"
-                                          projectKey:@"MHPTW"
-                                              apiKey:@"b064ab88-3c5a-4fe9-be6e-2ecac505e8f9"
+    
+    JMCOptions *options = [JMCOptions optionsWithUrl:@"https://connect.onjira.com/"
+                                          projectKey:@"NERDS"
+                                              apiKey:@"591451a6-bc59-4ca9-8840-b67f8c1e440f"
                                               photos:YES
                                                voice:NO
                                             location:YES
@@ -27,7 +27,6 @@
                                         customFields:nil];
 
     [VWBugReporter sharedBugReporterWithJiraOptions:options];
-    
     
     return YES;
 }
