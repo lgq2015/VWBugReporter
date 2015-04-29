@@ -1,0 +1,44 @@
+{
+  "name": "VWBugReporter",
+  "version": "0.0.1",
+  "summary": "A bug reporter for Jira.",
+  "description": "                   Integrate this pod in Testflight releases to get a more detailed Jira issue reports more easily.\n\n                   Testers can shake their iDevice to create a Jira Bug report and VWBugReporter will automatically attach a zip file containing the following files:\n                   * previous crash reports using PLCrashReporter\n                   * CocoaLumberjack log files\n                   * your sqlite database stored in Documents\n                   * a detailed hardware description using DeviceUtil\n                   * depends on Jira (Cloud or Server) with JIRAConnect enabled\n",
+  "homepage": "http://EXAMPLE/VWBugReporter",
+  "license": "MIT (example)",
+  "authors": {
+    "Vinzenz Weber": "vinzenz@blockhaus-medien.at"
+  },
+  "social_media_url": "http://twitter.com/vinzenzweber",
+  "platforms": {
+    "ios": "7.1"
+  },
+  "source": {
+    "git": "https://github.com/vinzenzweber/VWBugReporter.git",
+    "tag": "0.0.1"
+  },
+  "source_files": [
+    "Classes",
+    "Classes/**/*.{h,m}"
+  ],
+  "exclude_files": "Classes/Exclude",
+  "dependencies": {
+    "JIRAConnect": [
+      "~> 1.2"
+    ],
+    "CocoaLumberjack": [
+      "~> 2.0"
+    ],
+    "DeviceUtil": [
+      "~> 1.2"
+    ],
+    "PLCrashReporter": [
+      "~> 1.2"
+    ],
+    "SSZipArchive": [
+      "~> 0.3.2"
+    ],
+    "OpenUDID": [
+      "~> 1.0"
+    ]
+  }
+}

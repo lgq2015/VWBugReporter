@@ -1,0 +1,42 @@
+PODS:
+  - CocoaLumberjack (2.0.0):
+    - CocoaLumberjack/Default (= 2.0.0)
+    - CocoaLumberjack/Extensions (= 2.0.0)
+  - CocoaLumberjack/Core (2.0.0)
+  - CocoaLumberjack/Default (2.0.0):
+    - CocoaLumberjack/Core
+  - CocoaLumberjack/Extensions (2.0.0):
+    - CocoaLumberjack/Default
+  - DeviceUtil (1.2.0)
+  - JIRAConnect (1.2.1):
+    - Reachability (>= 2.0.4)
+  - OpenUDID (1.0.0)
+  - PLCrashReporter (1.2.0)
+  - Reachability (3.2)
+  - SSZipArchive (0.3.2)
+  - VWBugReporter (0.0.1):
+    - CocoaLumberjack (~> 2.0)
+    - DeviceUtil (~> 1.2)
+    - JIRAConnect (~> 1.2)
+    - OpenUDID (~> 1.0)
+    - PLCrashReporter (~> 1.2)
+    - SSZipArchive (~> 0.3.2)
+
+DEPENDENCIES:
+  - VWBugReporter (from `../`)
+
+EXTERNAL SOURCES:
+  VWBugReporter:
+    :path: ../
+
+SPEC CHECKSUMS:
+  CocoaLumberjack: a6f77d987d65dc7ba86b0f84db7d0b9084f77bcb
+  DeviceUtil: 818812d4d2413e145a05d502cd1378e484d0c293
+  JIRAConnect: bd09e48ec5be1d9546e09db2cec1a49d8828077d
+  OpenUDID: e7cb6984c7304906ad20f3a36bf087b025896b6b
+  PLCrashReporter: 16927d86a093d0b9cf110545dacb77cb0ed0f243
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  SSZipArchive: 11801759495fa4efb7512ef652eb0042d68305d7
+  VWBugReporter: bb6204900a82db454a096f14c3cff611f8a4e73a
+
+COCOAPODS: 0.36.4
