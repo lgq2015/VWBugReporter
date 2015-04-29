@@ -7,7 +7,7 @@
 //
 
 #import "VWAppDelegate.h"
-//#import <VWBugReporter/VWBugReporter.h>
+#import <VWBugReporter/VWBugReporter.h>
 
 
 

@@ -16,11 +16,7 @@
     "git": "https://github.com/vinzenzweber/VWBugReporter.git",
     "tag": "0.0.1"
   },
-  "source_files": [
-    "Classes",
-    "Classes/**/*.{h,m}"
-  ],
-  "exclude_files": "Classes/Exclude",
+  "source_files": "Pod/Classes",
   "dependencies": {
     "JIRAConnect": [
       "~> 1.2"
