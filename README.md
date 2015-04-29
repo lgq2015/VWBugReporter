@@ -1,6 +1,6 @@
 # VWBugReporter
 
-[![CI Status](http://img.shields.io/travis/Vinzenz Weber/VWBugReporter.svg?style=flat)](https://travis-ci.org/Vinzenz Weber/VWBugReporter)
+[![CI Status](http://img.shields.io/travis/vinzenzweber/VWBugReporter.svg?style=flat)](https://travis-ci.org/Vinzenz Weber/VWBugReporter)
 [![Version](https://img.shields.io/cocoapods/v/VWBugReporter.svg?style=flat)](http://cocoapods.org/pods/VWBugReporter)
 [![License](https://img.shields.io/cocoapods/l/VWBugReporter.svg?style=flat)](http://cocoapods.org/pods/VWBugReporter)
 [![Platform](https://img.shields.io/cocoapods/p/VWBugReporter.svg?style=flat)](http://cocoapods.org/pods/VWBugReporter)
