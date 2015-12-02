@@ -16,17 +16,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    JMCOptions *options = [JMCOptions optionsWithUrl:@"https://connect.onjira.com/"
-                                          projectKey:@"NERDS"
-                                              apiKey:@"591451a6-bc59-4ca9-8840-b67f8c1e440f"
-                                              photos:YES
-                                               voice:NO
-                                            location:YES
-                                      crashReporting:NO
-                                       notifications:YES
-                                        customFields:nil];
-
-    [VWBugReporter sharedBugReporterWithJiraOptions:options];
+    [VWBugReporter sharedBugReporterWithUrl:@"https://connect.atlassian.net/"
+                                 projectKey:@"NERDS"
+                                     apiKey:@"591451a6-bc59-4ca9-8840-b67f8c1e440f"];
     
     return YES;
 }

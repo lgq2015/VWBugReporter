@@ -16,6 +16,9 @@
 @property (strong, nonatomic) JMCOptions *options;
 
 + (instancetype)sharedInstance;
++ (VWBugReporter *)sharedBugReporterWithUrl:(NSString *)jiraURL
+                                 projectKey:(NSString *)projektKey
+                                     apiKey:(NSString *)apiKey;
 + (VWBugReporter *)sharedBugReporterWithJiraOptions:(JMCOptions *)jiraOptions;
 
 - (NSString *)zippedLogFile;

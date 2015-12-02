@@ -29,6 +29,27 @@
 }
 
 
++ (VWBugReporter *)sharedBugReporterWithUrl:(NSString *)jiraURL
+                                 projectKey:(NSString *)projektKey
+                                     apiKey:(NSString *)apiKey {
+    
+    // setup JiraConnect
+    JMCOptions *options = [JMCOptions optionsWithUrl:jiraURL
+                                          projectKey:projektKey
+                                              apiKey:apiKey
+                                              photos:YES
+                                               voice:NO
+                                            location:YES
+                                      crashReporting:NO
+                                       notifications:YES
+                                        customFields:nil];
+
+    VWBugReporter *bugReporter = [VWBugReporter sharedBugReporterWithJiraOptions:options];
+
+    return bugReporter;
+}
+
+
 + (VWBugReporter *)sharedBugReporterWithJiraOptions:(JMCOptions *)jiraOptions {
 
 #if TARGET_IPHONE_SIMULATOR
